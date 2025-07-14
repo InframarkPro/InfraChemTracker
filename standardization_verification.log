@@ -1,0 +1,33 @@
+2025-03-27 17:43:19,128 - INFO - Starting standardization verification
+2025-03-27 17:43:19,128 - INFO - Found 1 test files to verify
+2025-03-27 17:43:19,128 - INFO - Processing file: attached_assets/ChemicalSpendbySupplier-YongdaLi639.xls
+2025-03-27 17:43:19,141 - INFO - Verifying file processing for: attached_assets/ChemicalSpendbySupplier-YongdaLi639.xls
+2025-03-27 17:43:19,141 - INFO - File identified as Chemical Spend by Supplier report based on filename: attached_assets/ChemicalSpendbySupplier-YongdaLi639.xls
+2025-03-27 17:43:19,141 - INFO - Detected report type: Chemical Spend by Supplier
+2025-03-27 17:43:19,142 - INFO - File identified as Chemical Spend by Supplier report based on filename: attached_assets/ChemicalSpendbySupplier-YongdaLi639.xls
+2025-03-27 17:43:19,276 - INFO - Successfully extracted 1730 rows from XML file
+2025-03-27 17:43:19,290 - INFO - Original columns: ['{Vendor}', 'Supplier Category', 'Line of Service: Name', 'Project Region', 'Department: Name', 'Bill # (Supplier Invoice #)', 'Date Due', 'Date Created', 'Description', 'QTY', 'Units', 'Total']
+2025-03-27 17:43:19,313 - INFO - Total Cost sum: $5397814.23
+2025-03-27 17:43:19,314 - INFO - Final columns after standardization: ['vendor', 'supplier_category', 'line_of_service', 'project_region', 'department', 'invoice_number', 'date_due', 'date_created', 'description', 'quantity', 'units', 'total_cost', 'supplier', 'chemical', 'type', 'order_id', 'po_count']
+2025-03-27 17:43:19,314 - INFO - Successfully processed chemical_spend_by_supplier report with 1730 rows
+2025-03-27 17:43:19,314 - INFO - Successfully processed file as chemical_spend_by_supplier
+2025-03-27 17:43:19,315 - INFO - DataFrame shape: (1730, 17)
+2025-03-27 17:43:19,315 - INFO - Total PO count: 1730
+2025-03-27 17:43:19,316 - INFO - Purchase types: {'Catalog': 1403, 'Free Text': 327}
+2025-03-27 17:43:19,318 - INFO - ✅ File processing verification passed for attached_assets/ChemicalSpendbySupplier-YongdaLi639.xls
+2025-03-27 17:43:19,319 - INFO - File identified as Chemical Spend by Supplier report based on filename: attached_assets/ChemicalSpendbySupplier-YongdaLi639.xls
+2025-03-27 17:43:19,319 - INFO - Detected report type: Chemical Spend by Supplier
+2025-03-27 17:43:19,319 - INFO - File identified as Chemical Spend by Supplier report based on filename: attached_assets/ChemicalSpendbySupplier-YongdaLi639.xls
+2025-03-27 17:43:19,436 - INFO - Successfully extracted 1730 rows from XML file
+2025-03-27 17:43:19,447 - INFO - Original columns: ['{Vendor}', 'Supplier Category', 'Line of Service: Name', 'Project Region', 'Department: Name', 'Bill # (Supplier Invoice #)', 'Date Due', 'Date Created', 'Description', 'QTY', 'Units', 'Total']
+2025-03-27 17:43:19,467 - INFO - Total Cost sum: $5397814.23
+2025-03-27 17:43:19,467 - INFO - Final columns after standardization: ['vendor', 'supplier_category', 'line_of_service', 'project_region', 'department', 'invoice_number', 'date_due', 'date_created', 'description', 'quantity', 'units', 'total_cost', 'supplier', 'chemical', 'type', 'order_id', 'po_count']
+2025-03-27 17:43:19,468 - INFO - Successfully processed chemical_spend_by_supplier report with 1730 rows
+2025-03-27 17:43:19,468 - INFO - Verifying database operations with temp file: temp_verification_20250327174319.csv
+2025-03-27 17:43:19,500 - INFO - Saved data to temp_verification_20250327174319.csv
+2025-03-27 17:43:19,509 - INFO - Read data from temp_verification_20250327174319.csv
+2025-03-27 17:43:19,510 - INFO - Removed temporary file temp_verification_20250327174319.csv
+2025-03-27 17:43:19,510 - INFO - ✅ Database operations verification passed for attached_assets/ChemicalSpendbySupplier-YongdaLi639.xls
+2025-03-27 17:43:19,510 - INFO - ==================================================
+2025-03-27 17:43:19,510 - INFO - Verification complete: 1 passed, 0 failed
+2025-03-27 17:43:19,510 - INFO - ==================================================

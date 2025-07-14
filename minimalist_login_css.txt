@@ -1,0 +1,91 @@
+        # Minimalist Theme CSS
+        st.markdown("""
+        <style>
+        header {display: none !important;}
+        footer {display: none !important;}
+        #MainMenu {visibility: hidden;}
+        .viewerBadge_container__1QSob {display: none !important;}
+        .stDeployButton {display: none !important;}
+        
+        /* Make the background white */
+        body {
+            background-color: #FFFFFF !important;
+        }
+        
+        .stApp {
+            background-color: #FFFFFF !important;
+        }
+        
+        /* Global Form Styling */
+        [data-testid="stForm"] {
+            background-color: #FFFFFF;
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+            padding: 20px;
+            width: 100% !important;
+            max-width: 650px !important;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Input field styling */
+        [data-baseweb="input"] {
+            border: 1px solid #DDDDDD !important;
+            background-color: #FFFFFF !important;
+            margin-bottom: 15px !important;
+        }
+        
+        [data-baseweb="input"] input {
+            color: #333333 !important;
+            font-family: 'Arial', sans-serif !important;
+            font-size: 16px !important;
+        }
+        
+        /* Button styling */
+        .stButton button {
+            background-color: #4682B4 !important;
+            color: #FFFFFF !important;
+            border: none !important;
+            font-family: 'Arial', sans-serif !important;
+            font-size: 16px !important;
+            padding: 8px 16px !important;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stButton button:hover {
+            background-color: #3A6C99 !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Radio button styling for theme selection */
+        .stRadio > div {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: center !important;
+            gap: 30px !important;
+        }
+        
+        .stRadio > div > div {
+            flex: 0 0 auto !important;
+        }
+        
+        /* Theme preview containers */
+        div[data-testid="column"] > div {
+            height: auto !important;
+        }
+        
+        /* Make labels more visible */
+        .stTextInput label, .stRadio label {
+            color: #333333 !important;
+            font-weight: bold !important;
+            font-family: 'Arial', sans-serif !important;
+            font-size: 16px !important;
+            margin-bottom: 5px !important;
+        }
+        
+        /* Fix theme column height */
+        div[data-testid="column"] [data-testid="stVerticalBlock"] {
+            height: auto !important;
+        }
+        </style>
+        """, unsafe_allow_html=True)

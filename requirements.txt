@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+openpyxl
+matplotlib
+plotly
+requests
+watchdog
+sqlalchemy
+alembic

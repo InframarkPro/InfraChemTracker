@@ -1,0 +1,52 @@
+            # Tab for Analysis by Item Number
+            # Removed "By Item Number" tab as requested
+            # with analysis_tab2:
+            #    st.subheader("Analysis by Item Number")
+                
+                # Drop rows with empty ItemNumber
+                df_with_item_numbers = df.dropna(subset=['ItemNumber']).copy()
+                
+                if df_with_item_numbers.empty:
+                    st.warning("No items with Item Numbers found in the database.")
+
+                else:
+                    # Get unique ItemNumbers for comparison
+                    item_numbers = df_with_item_numbers['ItemNumber'].unique()
+                    
+                    # Show diagnostic information about the items we have
+                    st.info(f"Found {len(item_numbers)} unique item numbers to analyze.")
+
+                    
+                    # Sort by frequency
+                    item_number_count = df_with_item_numbers['ItemNumber'].value_counts()
+                    sorted_item_numbers = item_number_count.sort_values(ascending=False).index.tolist()
+                    
+                    # Show count of suppliers per item number
+                    supplier_counts = df_with_item_numbers.groupby('ItemNumber')['SupplierName'].nunique().sort_values(ascending=False)
+                    
+                    # Filter to only show items with multiple suppliers for more useful comparisons
+                    multi_supplier_items = supplier_counts[supplier_counts > 1]
+                    
+                    # Debug output
+                    st.write(f"Total items with item numbers: {len(item_numbers)}")
+                    st.write(f"Items with multiple suppliers: {len(multi_supplier_items)}")
+                    
+                    # Create item summary for dropdown formatting (but don't display the table)
+                    item_summary = df_with_item_numbers.groupby('ItemNumber').agg({
+                        'SupplierName': 'nunique',
+                        'ItemDescription': 'first'
+                    }).reset_index()
+                    item_summary.columns = ['Item Number', 'Supplier Count', 'Item Description']
+                    
+                    if not multi_supplier_items.empty:
+                        # List of item numbers with multiple suppliers
+                        multi_items = multi_supplier_items.index.tolist()
+                        
+                        # Selection box for item number
+                        selected_item_number = st.selectbox(
+                            "Select Item Number for Price Comparison",
+                            options=multi_items,
+                            index=0,
+                            key="item_number_selector",
+                            format_func=lambda x: f"{x} ({df_with_item_numbers[df_with_item_numbers['ItemNumber'] == x]['ItemDescription'].iloc[0]})"
+                        )

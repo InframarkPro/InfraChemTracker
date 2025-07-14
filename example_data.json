@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "Chemical": "Sodium Hypochlorite",
+      "Supplier": "ChemWorks Inc.",
+      "Region": "Northeast",
+      "Quantity": 1200,
+      "Units": "Gallons",
+      "Total_Cost": 3560.50,
+      "Date": "2025-01-15",
+      "Facility": "Main Plant"
+    },
+    {
+      "Chemical": "Hydrochloric Acid",
+      "Supplier": "AcidTech Solutions",
+      "Region": "Northeast",
+      "Quantity": 500,
+      "Units": "Gallons",
+      "Total_Cost": 1850.75,
+      "Date": "2025-01-20",
+      "Facility": "Main Plant"
+    },
+    {
+      "Chemical": "Sodium Hypochlorite",
+      "Supplier": "ChemWorks Inc.",
+      "Region": "Southeast",
+      "Quantity": 1500,
+      "Units": "Gallons",
+      "Total_Cost": 4350.25,
+      "Date": "2025-01-18",
+      "Facility": "South Treatment"
+    },
+    {
+      "Chemical": "Polymer",
+      "Supplier": "PolyTech Industries",
+      "Region": "West",
+      "Quantity": 250,
+      "Units": "Pounds",
+      "Total_Cost": 2125.00,
+      "Date": "2025-01-22",
+      "Facility": "West Plant"
+    },
+    {
+      "Chemical": "Lime",
+      "Supplier": "LimePro Solutions",
+      "Region": "Midwest",
+      "Quantity": 2000,
+      "Units": "Pounds",
+      "Total_Cost": 1230.50,
+      "Date": "2025-01-25",
+      "Facility": "Central Facility"
+    },
+    {
+      "Chemical": "Activated Carbon",
+      "Supplier": "Carbon Systems",
+      "Region": "West",
+      "Quantity": 1000,
+      "Units": "Pounds",
+      "Total_Cost": 3450.00,
+      "Date": "2025-01-28",
+      "Facility": "West Plant"
+    },
+    {
+      "Chemical": "Sodium Hydroxide",
+      "Supplier": "ChemWorks Inc.",
+      "Region": "Southeast",
+      "Quantity": 650,
+      "Units": "Gallons",
+      "Total_Cost": 2340.75,
+      "Date": "2025-02-03",
+      "Facility": "South Treatment"
+    },
+    {
+      "Chemical": "Sodium Hypochlorite",
+      "Supplier": "ChemWorks Inc.",
+      "Region": "Northeast",
+      "Quantity": 1100,
+      "Units": "Gallons",
+      "Total_Cost": 3265.50,
+      "Date": "2025-02-05",
+      "Facility": "Main Plant"
+    },
+    {
+      "Chemical": "Ferric Chloride",
+      "Supplier": "IronTech Solutions",
+      "Region": "Midwest",
+      "Quantity": 800,
+      "Units": "Gallons",
+      "Total_Cost": 2875.25,
+      "Date": "2025-02-10",
+      "Facility": "Central Facility"
+    },
+    {
+      "Chemical": "Ammonia",
+      "Supplier": "AmmoniaPro",
+      "Region": "West",
+      "Quantity": 350,
+      "Units": "Gallons",
+      "Total_Cost": 1675.50,
+      "Date": "2025-02-12",
+      "Facility": "West Plant"
+    },
+    {
+      "Chemical": "Sulfuric Acid",
+      "Supplier": "AcidTech Solutions",
+      "Region": "Southeast",
+      "Quantity": 400,
+      "Units": "Gallons",
+      "Total_Cost": 1920.25,
+      "Date": "2025-02-15",
+      "Facility": "South Treatment"
+    },
+    {
+      "Chemical": "Sodium Hypochlorite",
+      "Supplier": "ChemWorks Inc.",
+      "Region": "Midwest",
+      "Quantity": 1300,
+      "Units": "Gallons",
+      "Total_Cost": 3840.75,
+      "Date": "2025-02-18",
+      "Facility": "Central Facility"
+    }
+  ]
+}
